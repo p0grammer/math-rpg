@@ -1,0 +1,4 @@
+pygame>=2.6.0
+sympy>=1.13
+numpy>=1.26
+pyinstaller>=6.0

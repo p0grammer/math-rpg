@@ -1,0 +1,281 @@
+{
+  "version": "1.0",
+  "total_levels": 50,
+  "chapters": [
+    { "id": 1, "name": "Chapter 1: The Differential Foothills", "levels": [1, 2, 3, 4, 5] },
+    { "id": 2, "name": "Chapter 2: The Integral Catacombs", "levels": [6, 7, 8, 9, 10] },
+    { "id": 3, "name": "Chapter 3: The Substitution Caverns", "levels": [11, 12, 13, 14, 15] },
+    { "id": 4, "name": "Chapter 4: The By-Parts Citadel", "levels": [16, 17, 18, 19, 20] },
+    { "id": 5, "name": "Chapter 5: Trigonometric Horizons", "levels": [21, 22, 23, 24, 25] },
+    { "id": 6, "name": "Chapter 6: Rational Ruins", "levels": [26, 27, 28, 29, 30] },
+    { "id": 7, "name": "Chapter 7: The Asymptote Abyss", "levels": [31, 32, 33, 34, 35] },
+    { "id": 8, "name": "Chapter 8: The Infinite Convergence", "levels": [36, 37, 38, 39, 40] },
+    { "id": 9, "name": "Chapter 9: The Multi-Variable Realm", "levels": [41, 42, 43, 44, 45] },
+    { "id": 10, "name": "Chapter 10: The Throne of Equations", "levels": [46, 47, 48, 49, 50] }
+  ],
+  "levels": [
+    {
+      "level_number": 1,
+      "name": "Level 1: The Power Rule",
+      "chapter_id": 1,
+      "topic": "POWER_RULE",
+      "is_boss": false,
+      "enemy": {
+        "id": "beast",
+        "name": "POLYNOMIAL BEAST",
+        "sprite_type": "beast",
+        "max_hp": 80,
+        "hp_per_hit": 20
+      },
+      "formula_display": "d/dx( x^n ) = n * x^(n-1)",
+      "story_messages": [
+        ["", "In the Kingdom of Mathematics, darkness has fallen..."],
+        ["", "The evil POLYNOMIAL KING has captured PRINCESS x^n!"],
+        ["MASTER LEIBNIZ", "Greetings, young hero. Take the POWER RULE SWORD and strike!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "Bring the exponent to the front and multiply, then subtract 1 from the exponent."],
+        ["MASTER LEIBNIZ", "Example: d/dx( 4x^3 ) = 12x^2."]
+      ],
+      "victory_messages": [
+        ["", "The POLYNOMIAL BEAST crumbles into dust!"]
+      ]
+    },
+    {
+      "level_number": 2,
+      "name": "Level 2: The Product Rule",
+      "chapter_id": 1,
+      "topic": "PRODUCT_RULE",
+      "is_boss": false,
+      "enemy": {
+        "id": "twins",
+        "name": "THE TWIN GUARDS",
+        "sprite_type": "twins",
+        "max_hp": 100,
+        "hp_per_hit": 25
+      },
+      "formula_display": "d/dx( f * g ) = f'g + fg'",
+      "story_messages": [
+        ["MASTER LEIBNIZ", "The King has combined two guards into a single unit!"],
+        ["MASTER LEIBNIZ", "You must channel the PRODUCT RULE to split their multiplication!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "Use (f * g)' = f'g + fg'."],
+        ["MASTER LEIBNIZ", "Derivative of first times second, plus first times derivative of second!"]
+      ],
+      "victory_messages": [
+        ["", "The Twin Guards' shield shatters into sparkling shards!"]
+      ]
+    },
+    {
+      "level_number": 3,
+      "name": "Level 3: Quotient Fractures",
+      "chapter_id": 1,
+      "topic": "QUOTIENT_RULE",
+      "is_boss": false,
+      "enemy": {
+        "id": "crystal",
+        "name": "RATIONAL CRYSTAL",
+        "sprite_type": "crystal",
+        "max_hp": 80,
+        "hp_per_hit": 20
+      },
+      "formula_display": "d/dx( u / v ) = (u'v - uv') / v^2",
+      "story_messages": [
+        ["", "The path leads through the Chasm of Fractions."],
+        ["MASTER LEIBNIZ", "Rational expressions floating in division guard this ravine!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "Remember: (Low d-High minus High d-Low) over (Low squared)!"],
+        ["MASTER LEIBNIZ", "d/dx( u / v ) = (u'v - uv') / v^2."]
+      ],
+      "victory_messages": [
+        ["", "The Rational Crystal shatters into simplified polynomials!"]
+      ]
+    },
+    {
+      "level_number": 4,
+      "name": "Level 4: Harmonic Waves",
+      "chapter_id": 1,
+      "topic": "TRIG_DERIVATIVES",
+      "is_boss": false,
+      "enemy": {
+        "id": "slime",
+        "name": "SINUSOIDAL SLIME",
+        "sprite_type": "slime",
+        "max_hp": 80,
+        "hp_per_hit": 20
+      },
+      "formula_display": "d/dx( sin(kx) ) = k*cos(kx)",
+      "story_messages": [
+        ["", "Oscillating frequencies ripple through the air."],
+        ["MASTER LEIBNIZ", "Trigonometric creatures dwell here! Sine and Cosine alternate!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "d/dx( sin(x) ) = cos(x), and d/dx( cos(x) ) = -sin(x)."],
+        ["MASTER LEIBNIZ", "Don't forget the negative sign on cosine!"]
+      ],
+      "victory_messages": [
+        ["", "The sinusoidal waves settle into equilibrium!"]
+      ]
+    },
+    {
+      "level_number": 5,
+      "name": "Level 5: The Chain Golem",
+      "chapter_id": 1,
+      "topic": "CHAIN_RULE",
+      "is_boss": true,
+      "enemy": {
+        "id": "golem",
+        "name": "THE CHAIN GOLEM",
+        "sprite_type": "golem",
+        "max_hp": 120,
+        "hp_per_hit": 24
+      },
+      "formula_display": "d/dx[ f(g(x)) ] = f'(g(x)) * g'(x)",
+      "story_messages": [
+        ["", "⚠️ WARNING: BOSS APPROACHING ⚠️"],
+        ["", "The ground trembles! A towering colossus bound in heavy arcane chains rises!"],
+        ["THE CHAIN GOLEM", "NESTED FUNCTIONS PROTECT MY CORE. YOU SHALL NOT PASS!"],
+        ["MASTER LEIBNIZ", "It's THE CHAIN GOLEM! You must derive the outer shell, then multiply by the inner derivative!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "The Chain Rule: d/dx[ f(g(x)) ] = f'(g(x)) * g'(x)."],
+        ["MASTER LEIBNIZ", "First derive the outside function leaving inside untouched, then multiply by derivative of inside!"],
+        ["MASTER LEIBNIZ", "Example: d/dx[ (3x+2)^4 ] = 4(3x+2)^3 * 3 = 12(3x+2)^3!"]
+      ],
+      "victory_messages": [
+        ["", "The colossal stone golem shatters, dropping its enchanted chains!"],
+        ["MASTER LEIBNIZ", "CHAPTER 1 CLEARED! You have mastered the Differential Foothills!"]
+      ]
+    },
+    {
+      "level_number": 6,
+      "name": "Level 6: Exponential Surge",
+      "chapter_id": 2,
+      "topic": "EXP_LOG_DERIVATIVES",
+      "is_boss": false,
+      "enemy": {
+        "id": "slime",
+        "name": "NATURAL EXPONENT",
+        "sprite_type": "slime",
+        "max_hp": 80,
+        "hp_per_hit": 20
+      },
+      "formula_display": "d/dx( e^(kx) ) = k * e^(kx)",
+      "story_messages": [
+        ["", "You descend into Chapter 2: The Integral Catacombs."],
+        ["MASTER LEIBNIZ", "Euler's constant e powers the guardians here. Their rate of change equals themselves!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "d/dx( e^x ) = e^x. With chain rule: d/dx( e^(kx) ) = k * e^(kx)."]
+      ],
+      "victory_messages": [
+        ["", "The exponential surge stabilizes!"]
+      ]
+    },
+    {
+      "level_number": 7,
+      "name": "Level 7: Logarithmic Crypts",
+      "chapter_id": 2,
+      "topic": "EXP_LOG_DERIVATIVES",
+      "is_boss": false,
+      "enemy": {
+        "id": "skull",
+        "name": "LOGARITHMIC SKULL",
+        "sprite_type": "skull",
+        "max_hp": 80,
+        "hp_per_hit": 20
+      },
+      "formula_display": "d/dx( ln(x) ) = 1 / x",
+      "story_messages": [
+        ["", "Ancient carved inscriptions line the catacomb walls."],
+        ["MASTER LEIBNIZ", "Natural logarithms inverse the growth of the King's monsters!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "d/dx( ln(x) ) = 1/x. For d/dx( ln(u) ) = u'/u."]
+      ],
+      "victory_messages": [
+        ["", "The skull dissolves into fractional dust!"]
+      ]
+    },
+    {
+      "level_number": 8,
+      "name": "Level 8: Chain Cascades",
+      "chapter_id": 2,
+      "topic": "CHAIN_RULE",
+      "is_boss": false,
+      "enemy": {
+        "id": "crystal",
+        "name": "CASCADE PRISM",
+        "sprite_type": "crystal",
+        "max_hp": 90,
+        "hp_per_hit": 22
+      },
+      "formula_display": "d/dx[ cos(kx) ] = -k*sin(kx)",
+      "story_messages": [
+        ["MASTER LEIBNIZ", "Trigonometric and polynomial chains intertwine!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "Combine your chain rule knowledge with trig functions!"]
+      ],
+      "victory_messages": [
+        ["", "The prism harmonizes!"]
+      ]
+    },
+    {
+      "level_number": 9,
+      "name": "Level 9: The First Antiderivative",
+      "chapter_id": 2,
+      "topic": "BASIC_INTEGRALS",
+      "is_boss": false,
+      "enemy": {
+        "id": "beast",
+        "name": "INTEGRAL SPECTER",
+        "sprite_type": "beast",
+        "max_hp": 90,
+        "hp_per_hit": 22
+      },
+      "formula_display": "\u222b x^n dx = (x^(n+1))/(n+1) + C",
+      "story_messages": [
+        ["", "A reverse magical aura fills the chamber."],
+        ["MASTER LEIBNIZ", "We are entering the realm of INTEGRATION — the reverse of differentiation!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "To integrate x^n: ADD 1 to the exponent, then DIVIDE by the new exponent!"],
+        ["MASTER LEIBNIZ", "\u222b x^2 dx = (x^3)/3."]
+      ],
+      "victory_messages": [
+        ["", "The specter's accumulated power disperses!"]
+      ]
+    },
+    {
+      "level_number": 10,
+      "name": "Level 10: The Accumulator",
+      "chapter_id": 2,
+      "topic": "BASIC_INTEGRALS",
+      "is_boss": true,
+      "enemy": {
+        "id": "accumulator",
+        "name": "THE ACCUMULATOR",
+        "sprite_type": "accumulator",
+        "max_hp": 150,
+        "hp_per_hit": 30
+      },
+      "formula_display": "\u222b f(x) dx = F(x) + C",
+      "story_messages": [
+        ["", "⚠️ BOSS WARNING: THE ACCUMULATOR ⚠️"],
+        ["", "A giant mechanical clockwork engine with sweeping Riemann sum arms activates!"],
+        ["THE ACCUMULATOR", "I HAVE SUMMED ALL AREA UNDER THE CURVE. YOU CANNOT BOUND ME!"],
+        ["MASTER LEIBNIZ", "Channel the Fundamental Theorem of Calculus to defeat it!"]
+      ],
+      "tutorial_messages": [
+        ["MASTER LEIBNIZ", "Integrate polynomials, sines, and exponentials to break its accumulator gears!"]
+      ],
+      "victory_messages": [
+        ["", "The Accumulator's clockwork gears lock up and grind to a peaceful halt!"],
+        ["MASTER LEIBNIZ", "CHAPTER 2 CONQUERED! The path to Princess x^n opens!"]
+      ]
+    }
+  ]
+}

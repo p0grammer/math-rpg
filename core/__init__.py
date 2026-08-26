@@ -1,0 +1,1 @@
+# Mathpal — Core application framework
